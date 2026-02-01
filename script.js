@@ -15,26 +15,26 @@ $(function () {
   const playPreviousTrackButton = $("#play-previous");
   const playNextTrackButton = $("#play-next");
   const albums = [
-    "Me & You",
-    "Dawn",
-    "Electro Boy",
-    "Home",
-    "Proxy (Original Mix)"
+    "afterlife",
+    "i will not bow",
+    "bad apple!!",
+    "numb",
+    "dead talk"
   ];
   const trackNames = [
-    "Alex Skrindo - Me & You",
-    "Skylike - Dawn",
-    "Kaaze - Electro Boy",
-    "Jordan Schor - Home",
-    "Martin Garrix - Proxy"
+    "holding absence",
+    "breaking benjamin",
+    "richaadEB & cristina vee",
+    "8 graves",
+    "windwalkers"
   ];
   const albumArtworks = ["_1", "_2", "_3", "_4", "_5"];
   const trackUrl = [
-    "https://singhimalaya.github.io/Codepen/assets/music/1.mp3",
-    "https://singhimalaya.github.io/Codepen/assets/music/2.mp3",
-    "https://singhimalaya.github.io/Codepen/assets/music/3.mp3",
-    "https://singhimalaya.github.io/Codepen/assets/music/4.mp3",
-    "https://singhimalaya.github.io/Codepen/assets/music/5.mp3"
+    "https://raw.githubusercontent.com/knickslopps/shenyanigans/main/ytmp3free.cc_afterlife-youtubemp3free.org.mp3",
+    "https://raw.githubusercontent.com/knickslopps/shenyanigans/main/ytmp3free.cc_i-will-not-bow-youtubemp3free.org.mp3",
+    "https://raw.githubusercontent.com/knickslopps/shenyanigans/main/ytmp3free.cc_bad-apple-japanese-remaster-youtubemp3free.org.mp3",
+    "https://raw.githubusercontent.com/knickslopps/shenyanigans/main/ytmp3free.cc_numb-youtubemp3free.org.mp3",
+    "https://raw.githubusercontent.com/knickslopps/shenyanigans/main/ytmp3free.cc_dead-talk-youtubemp3free.org.mp3"
   ];
 
   let bgArtworkUrl,
