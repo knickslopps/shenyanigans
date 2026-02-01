@@ -1,10 +1,6 @@
 * {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  font-family: Georgia;
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -69,7 +65,7 @@ body {
   right: 15px;
   left: 15px;
   padding: 13px 22px 10px 184px;
-  background-color: #fff7f7;
+  background-color: #fafffa;
   border-radius: 15px 15px 0 0;
   transition: 0.3s ease top;
   z-index: 1;
@@ -80,13 +76,13 @@ body {
 }
 
 #album-name {
-  color: #54576f;
+  color: #1d2a1f;
   font-size: 17px;
   font-weight: bold;
 }
 
 #track-name {
-  color: #acaebd;
+  color: #828b83;
   font-size: 13px;
   margin: 2px 0 13px 0;
 }
@@ -109,14 +105,14 @@ body {
 #track-length {
   color: transparent;
   font-size: 11px;
-  background-color: #ffe8ee;
+  background-color: #5d7b60;
   border-radius: 10px;
   transition: 0.3s ease all;
 }
 
 #track-time.active #current-time,
 #track-time.active #track-length {
-  color: #f86d92;
+  color: #5d7b60;
   background-color: transparent;
 }
 
@@ -128,7 +124,7 @@ body {
 }
 
 #seek-bar-container {
-  background-color: #ffe8ee;
+  background-color: #c4e7c7;
   cursor: pointer;
 }
 
@@ -164,7 +160,7 @@ body {
   bottom: 0;
   left: 0;
   width: 0;
-  background-color: #fd6d94;
+  background-color: #5d7b60;
   transition: 0.2s ease width;
   z-index: 1;
 }
@@ -229,17 +225,7 @@ body {
 
 #album-art.active img.active {
   z-index: 1;
-  -webkit-animation: rotateAlbumArt 3s linear 0s infinite forwards;
-          animation: rotateAlbumArt 3s linear 0s infinite forwards;
-}
-
-@-webkit-keyframes rotateAlbumArt {
-  0% {
-    transform: rotateZ(0);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
+  animation: rotateAlbumArt 3s linear 0s infinite forwards;
 }
 
 @keyframes rotateAlbumArt {
@@ -259,7 +245,7 @@ body {
   height: 13px;
   color: #1f1f1f;
   font-size: 13px;
-  font-family: Helvetica;
+  font-family: Georgia;
   text-align: center;
   font-weight: bold;
   line-height: 1;
@@ -326,7 +312,7 @@ body {
 }
 
 .button:hover {
-  background-color: #d6d6de;
+  background-color: #5d7b60;
 }
 
 .button:hover i {
