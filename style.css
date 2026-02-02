@@ -6,15 +6,17 @@
 
 body {
   margin: 0;
-  background-color: #f1f9f9;
+  background: rgba(196, 231, 199, 0);
+  
 }
+
 *:focus {
   outline: none;
 }
 
 body {
   margin: 0;
-  background-color: #ffeff5;
+  background: rgba(196, 231, 199, 0);
 }
 
 #player-container {
