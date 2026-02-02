@@ -178,7 +178,9 @@ $(function () {
     if (flag == 0 || flag == 1) ++currIndex;
     else --currIndex;
 
-    if (currIndex > -1 && currIndex < albumArtworks.length) {
+    if (currIndex > -1 && currIndex <= albumArtworks.length) {
+
+if(currIndex==albumArtworks.length) currIndex = 0;
       if (flag == 0) i.attr("class", "fa fa-play");
       else {
         albumArt.removeClass("buffering");
@@ -217,12 +219,17 @@ $(function () {
       bgArtworkUrl = $("#" + currArtwork).attr("src");
 
       bgArtwork.css({ "background-image": "url(" + bgArtworkUrl + ")" });
-    } else {
-      if (flag == 0 || flag == 1) --currIndex;
-      else ++currIndex;
-    }
-  }
-
+     } else 
+       if(flag == 0 || flag == 1) {
+console.log("flag "+flag);
+console.log("index "+currIndex); 
+         currIndex = -1;
+} else{
+++currIndex;
+}
+   
+}
+   
   function initPlayer() {
     audio = new Audio();
 
